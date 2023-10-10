@@ -72,6 +72,13 @@ nav {
 
 }
 
+#img1:hover,
+#img2:hover,
+#img3:hover,
+#img4:hover {
+    box-shadow: #777;
+}
+
 .secondpage {
     border: 2px solid gold;
     position: relative;
