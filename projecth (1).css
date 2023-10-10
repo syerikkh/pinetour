@@ -299,7 +299,12 @@ nav {
 
     .choice {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 20px;
+    }
+
+    .contact {
+        display: flex;
+        gap: 30px;
     }
 }
