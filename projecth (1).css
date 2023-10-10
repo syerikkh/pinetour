@@ -22,7 +22,7 @@ main {
 
 .container {
     max-width: 1440px;
-
+    width: 100%;
 
     display: flex;
     flex-direction: column;
@@ -67,6 +67,8 @@ nav {
     flex-direction: row;
     gap: 66px;
     border: 2px solid blue;
+    justify-content: center;
+
 
 }
 
@@ -281,7 +283,23 @@ nav {
         height: 148px;
     }
 
-    ;
+    .secondpage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
+    .thirdpage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .choice {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
 }
