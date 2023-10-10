@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F4F4F4;
+
+}
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+
+
+}
+
+.container {
+    max-width: 1440px;
+
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.firstpage {
+    padding-top: 60px;
+    display: flex;
+    border: 2px solid rebeccapurple;
+    height: 100vh;
+    width: 100%;
+    gap: 120px;
+    flex-direction: column;
+
+}
+
+.title h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80px;
+    color: #303030;
+}
+
+nav {
+    background-color: #101010;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    max-width: 100vw;
+    width: 100%;
+
+
+}
+
+
+
+
+
+.images {
+    display: flex;
+    flex-direction: row;
+    gap: 66px;
+    border: 2px solid blue;
+
+}
+
+.secondpage {
+    border: 2px solid gold;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 60px;
+    height: 100vh;
+    width: 100%;
+}
+
+.tourname {
+    text-align: start;
+}
+
+
+.cardcontainer {
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 400px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 8px;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.card .place {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: end;
+}
+
+.card:hover {
+    color: #F4F4F4;
+    background-color: #101010;
+}
+
+#place1,
+#place2,
+#place3,
+#place4,
+#place5 {
+
+    opacity: 0;
+
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.5s;
+
+}
+
+#day1:hover #place1,
+#day2:hover #place2,
+#day3:hover #place3,
+#day4:hover #place4,
+#day5:hover #place5,
+#day6:hover #place1 {
+    opacity: 1;
+
+}
+
+.thirdpage {
+    border: 2px solid brown;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    gap: 40px;
+    height: 100vh;
+    width: 100%;
+
+
+}
+
+.choice {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+}
+
+.pack {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 20px;
+    gap: 40px;
+    background-color: #FFFFFF;
+    text-align: start;
+
+}
+
+.packandlist {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.name {
+    color: #303030;
+}
+
+.list {
+    font-size: 20px;
+    color: #777;
+}
+
+.price {
+    font-size: 32px;
+    color: #303030;
+}
+
+.pack:hover {
+    border: 2px solid #18BA51;
+}
+
+.firstfooter {
+
+    height: 183px;
+    background-color: #171717;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    ;
+}
+
+.lastfooter {
+    background-color: #101010;
+    height: 228px;
+    padding: 80px 120px 80px 120px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact {
+    color: #FFFFFF;
+
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.contact button {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    background-color: #303030;
+    color: #FFFFFF;
+
+
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+
+}
+
+@media screen and (max-width:767px) {
+    nav {
+        width: 100%;
+    }
+
+    .title h1 {
+        font-size: 48px;
+    }
+
+    .firstpage {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        ;
+
+    }
+
+    .images {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    img {
+        width: 148px;
+        height: 148px;
+    }
+
+    ;
+
+
+}
