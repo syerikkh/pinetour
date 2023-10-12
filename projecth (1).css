@@ -68,16 +68,19 @@ nav {
     gap: 66px;
     border: 2px solid blue;
     justify-content: center;
+    animation: none;
 
+}
 
+.images :hover {
+    animation: green 1s;
+    ;
 }
 
 #img1:hover,
 #img2:hover,
 #img3:hover,
-#img4:hover {
-    box-shadow: #777;
-}
+#img4:hover {}
 
 .secondpage {
     border: 2px solid gold;
@@ -88,6 +91,7 @@ nav {
     gap: 60px;
     height: 100vh;
     width: 100%;
+
 }
 
 .tourname {
@@ -137,6 +141,7 @@ nav {
     position: absolute;
     right: 0;
     top: 0;
+    height: 100vh;
     transition: 0.5s;
 
 }
@@ -313,5 +318,7 @@ nav {
     .contact {
         display: flex;
         gap: 30px;
+        align-items: center;
+        justify-content: center;
     }
 }
