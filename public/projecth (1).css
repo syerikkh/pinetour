@@ -4,8 +4,7 @@
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
+    background: #F4F4F4;
 }
 
 .navPart {
@@ -18,13 +17,13 @@ body {
 
 .firstPageContainer {
     width: 100%;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .firstPageInnerContainer {
+    max-width: 1198px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,6 +38,7 @@ body {
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+    margin-top: 20px;
 }
 
 .images img {
@@ -51,13 +51,399 @@ body {
     gap: 66px;
 }
 
-.cardContainer img {
-    display: none;
+.secondPage {
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
 }
 
 .secondPageInnerContainer {
-    width: 100vw;
-    height: 100vh;
+    width: 1198px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    gap: 130px;
+    position: relative;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tourName h3 {
+    color: #1AC74A;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.tourName h1 {
+    color: #303030;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card {
+    width: 400px;
+    height: 85px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #101010;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card:hover {
+    background-color: #101010;
+    color: white;
+    cursor: pointer;
+}
+
+.card:hover h5 {
+    color: white;
+}
+
+.card h5 {
+    color: #303030;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card h6 {
+    color: #777;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.place {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+}
+
+.place h5 {
+    color: #303030;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.cardContainer img {
+    opacity: 0;
+    width: 598px;
+    height: 894px;
+    border-radius: 12px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+}
+
+#day1:hover #place1 {
+    opacity: 1;
+}
+
+#day2:hover #place2 {
+    opacity: 1;
+}
+
+#day3:hover #place3 {
+    opacity: 1;
+}
+
+#day4:hover #place4 {
+    opacity: 1;
+}
+
+#day5:hover #place5 {
+    opacity: 1;
+}
+
+#day6:hover #place1 {
+    opacity: 1;
+}
+
+.thirdPage {
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.pack {
+    width: 308px;
+    height: 373px;
+    border-radius: 8px;
+    background: #FFF;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pack:hover {
+    border: 2px solid #18BA51;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.choice {
+    margin-top: 80px;
+    display: flex;
+    gap: 40px;
+}
+
+.packandlist {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.tourname {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tourname h1 {
+    color: #303030;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.tourname h3 {
+    color: #1AC74A;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.price h3 {
+    color: #303030;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    float: left;
+}
+
+.name h3 {
+    color: #303030;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.list {
+    color: #777;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.list li:hover {
+    font-weight: 700;
+
+}
+
+.firstfooter {
+    height: 183px;
+    background: #171717;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.firstfooter button {
+    width: 130px;
+    height: 44px;
+    border-radius: 4px;
+    background: #18BA51;
+    cursor: pointer;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.firstfooter h3 {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.lastfooter {
+    height: 228px;
+    padding: 80px 120px;
+    gap: 10px;
+    border-top: 1px solid #1AC74A;
+    background: #101010;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.buttons button {
+    border-radius: 4px;
+    background: #303030;
+    display: flex;
+    min-height: 44px;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.buttons h4 {
+    color: #FFF;
+}
+
+@media only screen and (max-width: 768px) {
+    .title {
+        color: #303030;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .images img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .secondPageInnerContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .title {
+        font-size: 48px;
+    }
+
+    .images img {
+        width: 148px;
+        height: 148px;
+    }
+
+    .tourName h3 {
+        font-size: 16px;
+
+    }
+
+    .tourName h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .tourName {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .secondPageInnerContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .card {
+        width: 312px;
+        height: 65px;
+        padding: 10px;
+    }
+
+    .place {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .tourname h3 {
+        font-size: 16px;
+    }
+
+    .tourname h1 {
+        font-size: 32px;
+    }
+
+    .choice {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lastfooter {
+        padding: 40px 30px;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 }
